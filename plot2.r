@@ -43,33 +43,9 @@ colnames(powerData)[10]<-"dateTime"
 png(file="plot2.png",width = 480, height = 480)
 
 plot(powerData$dateTime,powerData$Global_active_power,
-     type="l", ylab="Global Active Power (Kilowatt)")
+     type="l", ylab="Global Active Power (Kilowatt)",
+     xlab="")
 
 
 dev.off()
-
-
-
-
-powerData$Date.
-head(powerData)
-
-str(powerData)
-
-
-
-
-hist(powerData$Global_active_power,col = "red",
-     main="Global Active Power",
-     xlab="Global Active Power (killowatts)")
-
-
-
-# hist(powerData$Global_active_power,col = "red")
-# title(main="Global Active Power")
-# title(xlab="Global Active Power (killowatts)")
-
-dev.off()
-
-
 
